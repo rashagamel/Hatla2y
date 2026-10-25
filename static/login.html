@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasahel — Login</title>
+  <meta name="description" content="Sign in to Tasahel Sales Intelligence for Egyptian real estate">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0f14;
+      --surface: #151820;
+      --surface-2: #1c2030;
+      --border: #2a2f3f;
+      --text: #e8eaf0;
+      --text-dim: #8b90a0;
+      --gold: #c9a84c;
+      --gold-dim: #9a7a30;
+      --green: #3e8c8a;
+      --red: #c0392b;
+      --radius: 12px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background-image: radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(62, 140, 138, 0.06) 0%, transparent 40%);
+    }
+
+    .login-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 40px 40px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .logo-icon {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .logo h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+    }
+
+    .logo p {
+      font-size: 12px;
+      color: var(--text-dim);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 14px;
+      padding: 12px 16px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input:focus {
+      border-color: var(--gold-dim);
+    }
+
+    input::placeholder {
+      color: var(--text-dim);
+    }
+
+    .btn-login {
+      width: 100%;
+      background: var(--gold);
+      color: #0d0f14;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.2s, transform 0.1s;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-login:hover {
+      background: #dbb855;
+    }
+
+    .btn-login:active {
+      transform: scale(0.99);
+    }
+
+    .btn-login:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .error-msg {
+      background: rgba(192, 57, 43, 0.15);
+      border: 1px solid rgba(192, 57, 43, 0.4);
+      border-radius: 8px;
+      color: #e74c3c;
+      font-size: 13px;
+      padding: 10px 14px;
+      margin-bottom: 18px;
+      display: none;
+    }
+
+    .error-msg.visible {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-card">
+    <div class="logo">
+      <div class="logo-icon">🏠</div>
+      <h1>Tasahel</h1>
+      <p>Sales Intelligence</p>
+    </div>
+
+    <div id="error-msg" class="error-msg"></div>
+
+    <form id="login-form" onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="••••••••" autocomplete="current-password" required>
+      </div>
+      <button id="login-btn" class="btn-login" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <script>
+    // If already logged in, redirect to dashboard
+    if (localStorage.getItem('tasahel_token')) {
+      try {
+        // quick validity check
+        const payload = JSON.parse(atob(localStorage.getItem('tasahel_token').split('.')[1]));
+        if (payload.exp * 1000 > Date.now()) window.location.href = '/';
+        else localStorage.removeItem('tasahel_token');
+      } catch (e) { localStorage.removeItem('tasahel_token'); }
+    }
+
+    function showError(msg) {
+      const el = document.getElementById('error-msg');
+      el.textContent = msg;
+      el.classList.add('visible');
+    }
+    function hideError() {
+      document.getElementById('error-msg').classList.remove('visible');
+    }
+
+    async function handleLogin(e) {
+      e.preventDefault();
+      hideError();
+      const btn = document.getElementById('login-btn');
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      btn.disabled = true;
+      btn.textContent = 'Signing in…';
+
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          showError(data.error || 'Login failed');
+          return;
+        }
+        localStorage.setItem('tasahel_token', data.token);
+        localStorage.setItem('tasahel_user', JSON.stringify(data.user));
+        window.location.href = '/';
+      } catch (err) {
+        showError('Connection error — is the server running?');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Sign in';
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,2344 @@
+[
+  {
+    "conversation_id": "C0041",
+    "language": "english",
+    "messages": [
+      "Looking for a place in 6th of October",
+      "3 bedrooms, budget around 12M EGP",
+      "I'll be paying cash",
+      "This is purely an investment, not for living",
+      "Looking to close within 1-3 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 12000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0001",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في الساحل الشمالي",
+      "4 غرف، وميزانيتي حوالي 9.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 1242 الف وقسط شهري لغاية 129 الف",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 129000.0,
+      "max_down_payment": 1242000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0039",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في الساحل الشمالي؟",
+      "عايزها 2 غرف تقريبا، الميزانية 5 مليون",
+      "كاش أحسن بالنسبالي",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0066",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe october",
+      "3ayzha 2 oda, el budget hwaly 6M",
+      "hab2a 3ala a2sat, down payment 1068k, monthly max 96k",
+      "3ayzha bsor3a, within 2 weeks"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 96400.0,
+      "max_down_payment": 1068000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0097",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في 6th of October",
+      "3 bedrooms, وميزانيتي around 7M",
+      "عايز installment, max monthly 95,400 EGP",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 95400.0,
+      "max_down_payment": 869000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0029",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في أكتوبر؟",
+      "عايزها 2 غرف تقريبا، الميزانية 3 مليون",
+      "حابب أقساط، مقدم حوالي 275 الف والقسط الشهري ميزيدش عن 34 الف",
+      "دي لسكني أنا وعيلتي",
+      "حابب أقفلها خلال شهر لشهرين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 34600.0,
+      "max_down_payment": 275000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0065",
+    "language": "arabizi",
+    "messages": [
+      "mehtag shakka fe october",
+      "3 rooms, budget 4M taqriban",
+      "hab2a 3ala a2sat, down payment 677k, monthly max 45k",
+      "da estithmar mesh sokna",
+      "mesh mesta3gel, 3andy kam shahr"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 45700.0,
+      "max_down_payment": 677000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0012",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "2 غرف، وميزانيتي حوالي 12 مليون",
+      "بس عايزها بالتقسيط، مقدم 1406 الف وقسط شهري لغاية 122 الف",
+      "حابب أقفلها خلال شهر لشهرين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 12000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 122300.0,
+      "max_down_payment": 1406000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0006",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في التجمع الخامس؟",
+      "عايزها 4 غرف تقريبا، الميزانية 2.5 مليون",
+      "كاش أحسن بالنسبالي",
+      "دي لسكني أنا وعيلتي",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 2500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0020",
+    "language": "arabic",
+    "messages": [
+      "محتاج شقة في الشيخ زايد",
+      "3 غرف، وميزانيتي حوالي 3.5 مليون",
+      "حابب أقساط، مقدم حوالي 446 الف والقسط الشهري ميزيدش عن 33 الف",
+      "دي لسكني أنا وعيلتي",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 33900.0,
+      "max_down_payment": 446000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "family",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0095",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في New Cairo",
+      "عايزها 3 غرف, budget حوالي 9M",
+      "حابب أقساط، down payment حوالي 845,000",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 122100.0,
+      "max_down_payment": 845000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0069",
+    "language": "arabizi",
+    "messages": [
+      "mehtag villa fe north coast",
+      "4 rooms, budget 4.5M taqriban",
+      "cash mesh a2sat",
+      "da le sokna, ana w 3ela ty",
+      "lesa bdawar, mesh mo2arrar hanas 2arrib"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0011",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في أكتوبر؟",
+      "2 غرف، وميزانيتي حوالي 9.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 769 الف وقسط شهري لغاية 116 الف",
+      "دي استثمار مش سكن",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 116500.0,
+      "max_down_payment": 769000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0081",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في New Cairo",
+      "عايزها 2 غرف, budget حوالي 9M",
+      "عايز installment, max monthly 112,900 EGP",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 112900.0,
+      "max_down_payment": 1544000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0009",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في أكتوبر؟",
+      "3 غرف، وميزانيتي حوالي 8.5 مليون",
+      "كاش أحسن بالنسبالي",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0062",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe october",
+      "3 rooms, budget 10M taqriban",
+      "3ayz a2sat, el mo2adam 1773 alf, max 149 alf fel shahr",
+      "lesa bdawar, mesh mo2arrar hanas 2arrib"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 149500.0,
+      "max_down_payment": 1773000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0070",
+    "language": "arabizi",
+    "messages": [
+      "mehtag villa fe north coast",
+      "4 rooms, budget 6.5M taqriban",
+      "hab2a 3ala a2sat, down payment 1046k, monthly max 71k",
+      "da estithmar mesh sokna"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 71700.0,
+      "max_down_payment": 1046000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0063",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe new cairo",
+      "3ayzha 4 oda, el budget hwaly 9M",
+      "hab2a 3ala a2sat, down payment 826k, monthly max 111k",
+      "hab2fel deal within shahr aw shahrein"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 111900.0,
+      "max_down_payment": 826000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0091",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في North Coast",
+      "عايزها 4 غرف, budget حوالي 4M",
+      "عايز installment, max monthly 42,200 EGP",
+      "غرضي family residence",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 42200.0,
+      "max_down_payment": 498000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0038",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في التجمع الخامس",
+      "عايزها 4 غرف تقريبا، الميزانية 8.5 مليون",
+      "هدفعها كاش",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0013",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الشيخ زايد؟",
+      "2 غرف، وميزانيتي حوالي 12 مليون",
+      "كاش أحسن بالنسبالي",
+      "حابب أقفلها خلال شهر لشهرين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 12000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0078",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe new cairo",
+      "3 rooms, budget 4M taqriban",
+      "hab2a 3ala a2sat, down payment 354k, monthly max 56k",
+      "da le sokna, ana w 3ela ty",
+      "lesa bdawar, mesh mo2arrar hanas 2arrib"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 56900.0,
+      "max_down_payment": 354000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "family",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0051",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in North Coast?",
+      "3 bedrooms, budget around 9M EGP",
+      "Installments please, max 102,400 a month, down payment 1,039,000",
+      "This is for my family to live in",
+      "Need this ASAP, ideally within a couple weeks"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 102400.0,
+      "max_down_payment": 1039000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "family",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0015",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في الشيخ زايد",
+      "4 غرف، وميزانيتي حوالي 5 مليون",
+      "حابب أقساط، مقدم حوالي 889 الف والقسط الشهري ميزيدش عن 46 الف"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 46100.0,
+      "max_down_payment": 889000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0036",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في الساحل الشمالي",
+      "عايزها 4 غرف تقريبا، الميزانية 11 مليون",
+      "حابب أقساط، مقدم حوالي 1794 الف والقسط الشهري ميزيدش عن 144 الف"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 144100.0,
+      "max_down_payment": 1794000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0080",
+    "language": "arabizi",
+    "messages": [
+      "ezayak, 3andokom units fe north coast?",
+      "4 rooms, budget 8M taqriban",
+      "cash mesh a2sat",
+      "da estithmar mesh sokna",
+      "3ayzha bsor3a, within 2 weeks"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0088",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في 6th of October",
+      "عايزها 2 غرف, budget حوالي 5.5M",
+      "هدفع cash",
+      "for my family, مش استثمار",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0035",
+    "language": "arabic",
+    "messages": [
+      "محتاج شقة في الساحل الشمالي",
+      "2 غرف، وميزانيتي حوالي 10.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 1384 الف وقسط شهري لغاية 107 الف",
+      "دي استثمار مش سكن"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 107800.0,
+      "max_down_payment": 1384000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0010",
+    "language": "arabic",
+    "messages": [
+      "محتاج شقة في الشيخ زايد",
+      "2 غرف، وميزانيتي حوالي 5.5 مليون",
+      "هدفعها كاش",
+      "دي استثمار مش سكن"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0093",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في New Cairo",
+      "3 bedrooms, وميزانيتي around 7M",
+      "عايز installment, max monthly 82,200 EGP",
+      "ده استثمار, not for living",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 82200.0,
+      "max_down_payment": 954000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0033",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في التجمع الخامس؟",
+      "3 غرف، وميزانيتي حوالي 11 مليون",
+      "حابب أقساط، مقدم حوالي 1168 الف والقسط الشهري ميزيدش عن 186 الف",
+      "دي استثمار مش سكن"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 186200.0,
+      "max_down_payment": 1168000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0046",
+    "language": "english",
+    "messages": [
+      "Looking for a place in New Cairo",
+      "3 bedrooms, budget around 8.5M EGP",
+      "I'll be paying cash",
+      "This is purely an investment, not for living",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0025",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في الساحل الشمالي؟",
+      "عايزها 2 غرف تقريبا، الميزانية 5.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 561 الف وقسط شهري لغاية 79 الف",
+      "دي لسكني أنا وعيلتي",
+      "حابب أقفلها خلال شهر لشهرين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 79500.0,
+      "max_down_payment": 561000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0100",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في Sheikh Zayed",
+      "عايزها 2 غرف, budget حوالي 7.5M",
+      "عايز installment, max monthly 131,100 EGP",
+      "ده استثمار, not for living",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 131100.0,
+      "max_down_payment": 709000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0096",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في North Coast",
+      "عايزها 4 غرف, budget حوالي 7.5M",
+      "cash budget"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0004",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "4 غرف، وميزانيتي حوالي 6 مليون",
+      "حابب أقساط، مقدم حوالي 656 الف والقسط الشهري ميزيدش عن 94 الف",
+      "دي استثمار مش سكن",
+      "مش مستعجل، عندي كام شهر"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 94100.0,
+      "max_down_payment": 656000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0087",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في 6th of October",
+      "3 bedrooms, وميزانيتي around 4.5M",
+      "عايز installment, max monthly 60,000 EGP"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 60000.0,
+      "max_down_payment": 769000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0002",
+    "language": "arabic",
+    "messages": [
+      "محتاج شقة في الساحل الشمالي",
+      "عايزها 3 غرف تقريبا، الميزانية 4.5 مليون",
+      "كاش أحسن بالنسبالي",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0054",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in Sheikh Zayed?",
+      "3 bedrooms, budget around 5M EGP",
+      "Installments please, max 57,600 a month, down payment 503,000",
+      "This is purely an investment, not for living",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 57600.0,
+      "max_down_payment": 503000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0048",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in New Cairo?",
+      "4 bedrooms, budget around 10.5M EGP",
+      "I'd prefer installments — down payment up to 1,636,000, max monthly around 137,700 EGP",
+      "This is for my family to live in",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 137700.0,
+      "max_down_payment": 1636000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0042",
+    "language": "english",
+    "messages": [
+      "Hello, I saw your ad for properties in 6th of October",
+      "Need at least 2 bedrooms, my budget is roughly 6M",
+      "I'll be paying cash",
+      "No major rush, maybe in the next 3-6 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0075",
+    "language": "arabizi",
+    "messages": [
+      "ezayak, 3andokom units fe sheikh zayed?",
+      "3ayzha 2 oda, el budget hwaly 8M",
+      "3ayz a2sat, el mo2adam 956 alf, max 107 alf fel shahr"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 107700.0,
+      "max_down_payment": 956000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0022",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الساحل الشمالي؟",
+      "عايزها 3 غرف تقريبا، الميزانية 9.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 840 الف وقسط شهري لغاية 164 الف",
+      "دي استثمار مش سكن"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 164100.0,
+      "max_down_payment": 840000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0072",
+    "language": "arabizi",
+    "messages": [
+      "ezayak, 3andokom units fe sheikh zayed?",
+      "3ayzha 2 oda, el budget hwaly 3.5M",
+      "hab2a 3ala a2sat, down payment 355k, monthly max 59k",
+      "mesh mesta3gel, 3andy kam shahr"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 59200.0,
+      "max_down_payment": 355000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0047",
+    "language": "english",
+    "messages": [
+      "Looking for a place in North Coast",
+      "Need at least 4 bedrooms, my budget is roughly 2.5M",
+      "Cash buyer, no installments needed",
+      "This is for my family to live in"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 2500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0057",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in North Coast?",
+      "3 bedrooms, budget around 10.5M EGP",
+      "Cash buyer, no installments needed",
+      "This is for my family to live in",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "family",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0008",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في التجمع الخامس؟",
+      "عايزها 2 غرف تقريبا، الميزانية 6 مليون",
+      "بس عايزها بالتقسيط، مقدم 541 الف وقسط شهري لغاية 60 الف",
+      "دي لسكني أنا وعيلتي"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 60400.0,
+      "max_down_payment": 541000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0028",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الشيخ زايد؟",
+      "4 غرف، وميزانيتي حوالي 8 مليون",
+      "حابب أقساط، مقدم حوالي 1159 الف والقسط الشهري ميزيدش عن 106 الف",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 106800.0,
+      "max_down_payment": 1159000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0055",
+    "language": "english",
+    "messages": [
+      "Looking for a place in New Cairo",
+      "2 bedrooms, budget around 6.5M EGP",
+      "Installments please, max 65,100 a month, down payment 714,000",
+      "Looking to close within 1-3 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 65100.0,
+      "max_down_payment": 714000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0084",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في North Coast",
+      "عايزها 2 غرف, budget حوالي 6.5M",
+      "حابب أقساط، down payment حوالي 632,000"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 79600.0,
+      "max_down_payment": 632000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0030",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في أكتوبر",
+      "4 غرف، وميزانيتي حوالي 2.5 مليون",
+      "حابب أقساط، مقدم حوالي 334 الف والقسط الشهري ميزيدش عن 31 الف",
+      "دي استثمار مش سكن",
+      "مش مستعجل، عندي كام شهر"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 2500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 31900.0,
+      "max_down_payment": 334000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0071",
+    "language": "arabizi",
+    "messages": [
+      "mehtag villa fe sheikh zayed",
+      "3ayzha 4 oda, el budget hwaly 4M",
+      "hab2a 3ala a2sat, down payment 670k, monthly max 59k",
+      "da estithmar mesh sokna"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 59400.0,
+      "max_down_payment": 670000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0074",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe sheikh zayed",
+      "3 rooms, budget 7.5M taqriban",
+      "cash mesh a2sat",
+      "da estithmar mesh sokna"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0056",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in North Coast?",
+      "4 bedrooms, budget around 5.5M EGP",
+      "Installments please, max 91,400 a month, down payment 506,000",
+      "This is for my family to live in"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 91400.0,
+      "max_down_payment": 506000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0061",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe new cairo",
+      "3ayzha 4 oda, el budget hwaly 5M",
+      "3ayz a2sat, el mo2adam 777 alf, max 55 alf fel shahr",
+      "lesa bdawar, mesh mo2arrar hanas 2arrib"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 55600.0,
+      "max_down_payment": 777000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0092",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز villa في Sheikh Zayed",
+      "4 bedrooms, وميزانيتي around 8.5M",
+      "عايز installment, max monthly 87,700 EGP",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 87700.0,
+      "max_down_payment": 1317000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0037",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الساحل الشمالي؟",
+      "عايزها 4 غرف تقريبا، الميزانية 5.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 908 الف وقسط شهري لغاية 64 الف",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 64300.0,
+      "max_down_payment": 908000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0045",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in Sheikh Zayed?",
+      "2 bedrooms, budget around 7.5M EGP",
+      "I'd prefer installments — down payment up to 836,000, max monthly around 107,400 EGP",
+      "This is for my family to live in",
+      "Need this ASAP, ideally within a couple weeks"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 107400.0,
+      "max_down_payment": 836000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0094",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في 6th of October",
+      "2 bedrooms, وميزانيتي around 5.5M",
+      "عايز installment, max monthly 92,800 EGP",
+      "for my family, مش استثمار",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 92800.0,
+      "max_down_payment": 460000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0058",
+    "language": "english",
+    "messages": [
+      "Looking for a place in Sheikh Zayed",
+      "3 bedrooms, budget around 7.5M EGP",
+      "I'd prefer installments — down payment up to 1,005,000, max monthly around 119,700 EGP",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 119700.0,
+      "max_down_payment": 1005000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0027",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الساحل الشمالي؟",
+      "عايزها 4 غرف تقريبا، الميزانية 10.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 1546 الف وقسط شهري لغاية 106 الف",
+      "دي استثمار مش سكن",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 106600.0,
+      "max_down_payment": 1546000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0090",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في North Coast",
+      "2 bedrooms, وميزانيتي around 7M",
+      "عايز installment, max monthly 78,900 EGP",
+      "ده استثمار, not for living",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 78900.0,
+      "max_down_payment": 778000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0031",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "عايزها 2 غرف تقريبا، الميزانية 9 مليون",
+      "حابب أقساط، مقدم حوالي 1069 الف والقسط الشهري ميزيدش عن 122 الف",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 122000.0,
+      "max_down_payment": 1069000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0014",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في الساحل الشمالي؟",
+      "عايزها 4 غرف تقريبا، الميزانية 3.5 مليون",
+      "حابب أقساط، مقدم حوالي 297 الف والقسط الشهري ميزيدش عن 40 الف",
+      "دي لسكني أنا وعيلتي",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 40700.0,
+      "max_down_payment": 297000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "family",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0064",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe october",
+      "3ayzha 4 oda, el budget hwaly 9M",
+      "3ayz a2sat, el mo2adam 1261 alf, max 91 alf fel shahr",
+      "da estithmar mesh sokna"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 91300.0,
+      "max_down_payment": 1261000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0077",
+    "language": "arabizi",
+    "messages": [
+      "ezayak, 3andokom units fe new cairo?",
+      "4 rooms, budget 9M taqriban",
+      "cash mesh a2sat"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0089",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في New Cairo",
+      "عايزها 4 غرف, budget حوالي 11.5M",
+      "عايز installment, max monthly 146,100 EGP",
+      "ده استثمار, not for living",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 146100.0,
+      "max_down_payment": 1906000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0083",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في North Coast",
+      "2 bedrooms, وميزانيتي around 11.5M",
+      "عايز installment, max monthly 169,200 EGP",
+      "for my family, مش استثمار",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 169200.0,
+      "max_down_payment": 1966000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0007",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في الساحل الشمالي؟",
+      "2 غرف، وميزانيتي حوالي 11.5 مليون",
+      "حابب أقساط، مقدم حوالي 1148 الف والقسط الشهري ميزيدش عن 139 الف",
+      "دي لسكني أنا وعيلتي",
+      "مش مستعجل، عندي كام شهر"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 139300.0,
+      "max_down_payment": 1148000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0043",
+    "language": "english",
+    "messages": [
+      "Looking for a place in North Coast",
+      "Need at least 2 bedrooms, my budget is roughly 10M",
+      "I'd prefer installments — down payment up to 1,382,000, max monthly around 118,700 EGP",
+      "Looking to close within 1-3 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 118700.0,
+      "max_down_payment": 1382000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0032",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الشيخ زايد؟",
+      "4 غرف، وميزانيتي حوالي 5.5 مليون",
+      "كاش أحسن بالنسبالي",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0034",
+    "language": "arabic",
+    "messages": [
+      "السلام عليكم، عايز اعرف عندكوا شقق في الشيخ زايد؟",
+      "عايزها 4 غرف تقريبا، الميزانية 9 مليون",
+      "بس عايزها بالتقسيط، مقدم 1159 الف وقسط شهري لغاية 138 الف",
+      "دي استثمار مش سكن",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 138600.0,
+      "max_down_payment": 1159000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0017",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في التجمع الخامس؟",
+      "عايزها 2 غرف تقريبا، الميزانية 7 مليون",
+      "بس عايزها بالتقسيط، مقدم 932 الف وقسط شهري لغاية 118 الف",
+      "دي استثمار مش سكن",
+      "حابب أقفلها خلال شهر لشهرين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 118300.0,
+      "max_down_payment": 932000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0067",
+    "language": "arabizi",
+    "messages": [
+      "mehtag shakka fe north coast",
+      "3ayzha 2 oda, el budget hwaly 12M",
+      "hadfa3 cash",
+      "da le sokna, ana w 3ela ty",
+      "hab2fel deal within shahr aw shahrein"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 12000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0044",
+    "language": "english",
+    "messages": [
+      "Looking for a place in North Coast",
+      "4 bedrooms, budget around 9M EGP",
+      "I'd prefer installments — down payment up to 1,274,000, max monthly around 120,300 EGP",
+      "Looking to close within 1-3 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 9000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 120300.0,
+      "max_down_payment": 1274000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0023",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "عايزها 4 غرف تقريبا، الميزانية 4 مليون",
+      "بس عايزها بالتقسيط، مقدم 632 الف وقسط شهري لغاية 39 الف",
+      "دي استثمار مش سكن",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 4000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 39900.0,
+      "max_down_payment": 632000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0098",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في Sheikh Zayed",
+      "4 bedrooms, وميزانيتي around 6M",
+      "عايز installment, max monthly 80,000 EGP",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 80000.0,
+      "max_down_payment": 847000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0073",
+    "language": "arabizi",
+    "messages": [
+      "mehtag shakka fe october",
+      "3ayzha 2 oda, el budget hwaly 8M",
+      "hab2a 3ala a2sat, down payment 1221k, monthly max 124k",
+      "da estithmar mesh sokna",
+      "lesa bdawar, mesh mo2arrar hanas 2arrib"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 124500.0,
+      "max_down_payment": 1221000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0016",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "2 غرف، وميزانيتي حوالي 2.5 مليون",
+      "هدفعها كاش",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 2500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0050",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in New Cairo?",
+      "4 bedrooms, budget around 3M EGP",
+      "Cash buyer, no installments needed",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0068",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe new cairo",
+      "3ayzha 4 oda, el budget hwaly 5M",
+      "hab2a 3ala a2sat, down payment 517k, monthly max 54k",
+      "da estithmar mesh sokna",
+      "mesh mesta3gel, 3andy kam shahr"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 54400.0,
+      "max_down_payment": 517000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0019",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في الشيخ زايد؟",
+      "2 غرف، وميزانيتي حوالي 3.5 مليون",
+      "هدفعها كاش",
+      "دي استثمار مش سكن"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0099",
+    "language": "mixed",
+    "messages": [
+      "عايز apartment في 6th of October",
+      "عايزها 3 غرف, budget حوالي 11.5M",
+      "عايز installment, max monthly 127,800 EGP",
+      "ده استثمار, not for living",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 127800.0,
+      "max_down_payment": 1722000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0060",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in Sheikh Zayed?",
+      "3 bedrooms, budget around 10.5M EGP",
+      "I'd prefer installments — down payment up to 1,347,000, max monthly around 118,600 EGP",
+      "No major rush, maybe in the next 3-6 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 118600.0,
+      "max_down_payment": 1347000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0053",
+    "language": "english",
+    "messages": [
+      "Hello, I saw your ad for properties in 6th of October",
+      "4 bedrooms, budget around 11.5M EGP",
+      "Installments please, max 175,400 a month, down payment 1,846,000",
+      "Looking to close within 1-3 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 175400.0,
+      "max_down_payment": 1846000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0026",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في التجمع الخامس؟",
+      "3 غرف، وميزانيتي حوالي 5 مليون",
+      "كاش أحسن بالنسبالي",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0021",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في الساحل الشمالي",
+      "عايزها 4 غرف تقريبا، الميزانية 2.5 مليون",
+      "حابب أقساط، مقدم حوالي 218 الف والقسط الشهري ميزيدش عن 40 الف",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 2500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 40500.0,
+      "max_down_payment": 218000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0003",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "عايزها 4 غرف تقريبا، الميزانية 2.5 مليون",
+      "حابب أقساط، مقدم حوالي 216 الف والقسط الشهري ميزيدش عن 33 الف",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 2500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 33600.0,
+      "max_down_payment": 216000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0082",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز villa في North Coast",
+      "4 bedrooms, وميزانيتي around 7M",
+      "عايز installment, max monthly 73,200 EGP",
+      "مش هستعجل، just checking options"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 7000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 73200.0,
+      "max_down_payment": 1239000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 4,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0076",
+    "language": "arabizi",
+    "messages": [
+      "hi, 3ayz shakka fe october",
+      "2 rooms, budget 3.5M taqriban",
+      "hab2a 3ala a2sat, down payment 588k, monthly max 53k",
+      "da le sokna, ana w 3ela ty"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 3500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 53100.0,
+      "max_down_payment": 588000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": null
+    }
+  },
+  {
+    "conversation_id": "C0079",
+    "language": "arabizi",
+    "messages": [
+      "mehtag shakka fe sheikh zayed",
+      "3 rooms, budget 8.5M taqriban",
+      "3ayz a2sat, el mo2adam 967 alf, max 122 alf fel shahr",
+      "da estithmar mesh sokna",
+      "lesa bdawar, mesh mo2arrar hanas 2arrib"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 122000.0,
+      "max_down_payment": 967000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0049",
+    "language": "english",
+    "messages": [
+      "Hi, do you have anything in North Coast?",
+      "2 bedrooms, budget around 5.5M EGP",
+      "Cash buyer, no installments needed",
+      "This is for my family to live in",
+      "Looking to close within 1-3 months"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5500000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "family",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0086",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في Sheikh Zayed",
+      "2 bedrooms, وميزانيتي around 6M",
+      "cash budget",
+      "ده استثمار, not for living",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 6000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "3-6m"
+    }
+  },
+  {
+    "conversation_id": "C0040",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في أكتوبر؟",
+      "عايزها 3 غرف تقريبا، الميزانية 10 مليون",
+      "هدفعها كاش",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0018",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في التجمع الخامس؟",
+      "2 غرف، وميزانيتي حوالي 10 مليون",
+      "حابب أقساط، مقدم حوالي 1501 الف والقسط الشهري ميزيدش عن 166 الف",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 166000.0,
+      "max_down_payment": 1501000.0,
+      "preferred_locations": [
+        "New Cairo"
+      ],
+      "min_bedrooms": 2,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0085",
+    "language": "mixed",
+    "messages": [
+      "Hi عايز شقة في North Coast",
+      "3 bedrooms, وميزانيتي around 11M",
+      "هدفع cash",
+      "ده استثمار, not for living",
+      "need it soon, urgent شوية"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 11000000,
+      "payment_preference": "cash",
+      "max_monthly_payment": null,
+      "max_down_payment": null,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 3,
+      "purpose": "investment",
+      "purchase_timeline": "1-3m"
+    }
+  },
+  {
+    "conversation_id": "C0024",
+    "language": "arabic",
+    "messages": [
+      "محتاج فيلا في أكتوبر",
+      "عايزها 4 غرف تقريبا، الميزانية 5 مليون",
+      "بس عايزها بالتقسيط، مقدم 730 الف وقسط شهري لغاية 65 الف",
+      "دي استثمار مش سكن",
+      "لسه بدور، مش هاخد قرار قريب"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 5000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 65800.0,
+      "max_down_payment": 730000.0,
+      "preferred_locations": [
+        "6th of October"
+      ],
+      "min_bedrooms": 4,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  },
+  {
+    "conversation_id": "C0052",
+    "language": "english",
+    "messages": [
+      "Hello, I saw your ad for properties in North Coast",
+      "3 bedrooms, budget around 8M EGP",
+      "Installments please, max 125,100 a month, down payment 1,377,000",
+      "Need this ASAP, ideally within a couple weeks"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8000000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 125100.0,
+      "max_down_payment": 1377000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 3,
+      "purpose": null,
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0005",
+    "language": "arabic",
+    "messages": [
+      "ازيك، عندكم عقارات في الشيخ زايد؟",
+      "عايزها 2 غرف تقريبا، الميزانية 10.5 مليون",
+      "بس عايزها بالتقسيط، مقدم 871 الف وقسط شهري لغاية 179 الف",
+      "دي استثمار مش سكن",
+      "محتاجها بسرعة، خلال الأسبوعين الجايين"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 10500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 179100.0,
+      "max_down_payment": 871000.0,
+      "preferred_locations": [
+        "Sheikh Zayed"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "immediate"
+    }
+  },
+  {
+    "conversation_id": "C0059",
+    "language": "english",
+    "messages": [
+      "Hello, I saw your ad for properties in North Coast",
+      "Need at least 2 bedrooms, my budget is roughly 8.5M",
+      "Installments please, max 135,800 a month, down payment 1,505,000",
+      "This is purely an investment, not for living",
+      "Just exploring for now, no timeline yet"
+    ],
+    "labels": {
+      "budget_min": null,
+      "budget_max": 8500000,
+      "payment_preference": "installment",
+      "max_monthly_payment": 135800.0,
+      "max_down_payment": 1505000.0,
+      "preferred_locations": [
+        "North Coast"
+      ],
+      "min_bedrooms": 2,
+      "purpose": "investment",
+      "purchase_timeline": "6m+"
+    }
+  }
+]

@@ -1,0 +1,3 @@
+lead_id,conversation_summary,stated_budget_min,stated_budget_max,payment_preference,stated_monthly_max,stated_down_payment_max,preferred_locations,min_bedrooms,purpose,channel,first_response_time_hours,properties_shown,viewing_requested,viewing_attended,final_outcome,days_to_outcome
+EXAMPLE-001,"Wants 3BR in New Cairo, installment, mentioned 8-year plan preference",4500000,5500000,installment,55000,600000,New Cairo,3,family,whatsapp,1.5,4,yes,yes,won,21
+EXAMPLE-002,"Cash buyer, North Coast villa, investment purpose, went quiet after 2 weeks",8000000,10000000,cash,,,North Coast,4,investment,facebook_ad,6,2,no,no,no_response,
