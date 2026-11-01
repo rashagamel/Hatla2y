@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasahel — Login</title>
-  <meta name="description" content="Sign in to Tasahel Sales Intelligence for Egyptian real estate">
+  <title>Hatla2y هتلاقي — Sign in</title>
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <meta name="theme-color" content="#1A3B49">
+  <meta name="description" content="Sign in to Hatla2y هتلاقي, the sales copilot for Egyptian real estate agents">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Readex+Pro:wght@300..700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0d0f14;
-      --surface: #151820;
-      --surface-2: #1c2030;
-      --border: #2a2f3f;
-      --text: #e8eaf0;
-      --text-dim: #8b90a0;
-      --gold: #c9a84c;
-      --gold-dim: #9a7a30;
-      --green: #3e8c8a;
-      --red: #c0392b;
-      --radius: 12px;
+      /* hatla2y: forest night, sage, tan and saffron gold */
+      --bg: #1A3B49;
+      --surface: rgba(32,70,84,0.82);
+      --surface-2: rgba(42,86,104,0.92);
+      --border: #4D8296;
+      --text: #F7F9E1;
+      --text-dim: #C9E8F3;
+      --gold: #CAFFA6;
+      --gold-dim: #A9E0F1;
+      --green: #8FCB9B;
+      --red: #F0836B;
+      --radius: 14px;
     }
 
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', 'Readex Pro', sans-serif;
       background: var(--bg);
+      position: relative;
+      overflow-x: hidden;
       color: var(--text);
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 24px;
-      background-image: radial-gradient(ellipse at 20% 50%, rgba(201, 168, 76, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(62, 140, 138, 0.06) 0%, transparent 40%);
+      background-image: radial-gradient(900px 520px at 85% -5%, rgba(169,224,241,0.32), transparent 62%),
+                        radial-gradient(800px 520px at -5% 105%, rgba(169,224,241,0.26), transparent 60%);
+    }
+    /* skyline wallpaper */
+    body::before {
+      content: ""; position: fixed; left: 0; right: 0; bottom: 0; height: 80vh; z-index: 0; pointer-events: none;
+      background: url('/static/skyline.svg') center bottom / cover no-repeat; opacity: 0.30;
+      -webkit-mask-image: linear-gradient(to top, #000 35%, transparent 100%);
+              mask-image: linear-gradient(to top, #000 35%, transparent 100%);
     }
 
     .login-card {
@@ -51,48 +56,37 @@
       padding: 48px 40px 40px;
       width: 100%;
       max-width: 420px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+      position: relative; z-index: 1;
+      -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
     }
 
     .logo {
       text-align: center;
       margin-bottom: 32px;
     }
-
-    .logo-icon {
-      font-size: 36px;
-      margin-bottom: 8px;
-    }
-
+    .logo-icon { margin-bottom: 14px; }
     .logo h1 {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: 0.5px;
+      display: flex; justify-content: center; align-items: baseline; direction: ltr;
+      font-family: 'Readex Pro', 'Inter', sans-serif; font-weight: 700; font-size:38.3px; letter-spacing: -0.02em;
     }
-
-    .logo p {
-      font-size: 12px;
-      color: var(--text-dim);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-top: 4px;
-    }
+    .logo h1 .latin { color: var(--text); }
+    .logo h1 .sep { color: #A9E0F1; margin: 0 2px; }
+    .logo h1 .ar { color: var(--gold); font-weight: 600; direction: rtl; unicode-bidi: isolate; letter-spacing: 0; }
+    .logo p { font-size:16.6px; color: var(--text-dim); margin-top: 8px; }
 
     .form-group {
       margin-bottom: 18px;
     }
-
     label {
       display: block;
-      font-size: 12px;
+      font-size:15.3px;
       font-weight: 500;
       color: var(--text-dim);
       text-transform: uppercase;
       letter-spacing: 0.8px;
       margin-bottom: 8px;
     }
-
     input[type="email"],
     input[type="password"] {
       width: 100%;
@@ -101,19 +95,13 @@
       border-radius: 8px;
       color: var(--text);
       font-family: inherit;
-      font-size: 14px;
+      font-size:17.9px;
       padding: 12px 16px;
       outline: none;
       transition: border-color 0.2s;
     }
-
-    input:focus {
-      border-color: var(--gold-dim);
-    }
-
-    input::placeholder {
-      color: var(--text-dim);
-    }
+    input:focus { border-color: var(--gold-dim); }
+    input::placeholder { color: var(--text-dim); }
 
     .btn-login {
       width: 100%;
@@ -122,7 +110,7 @@
       border: none;
       border-radius: 8px;
       font-family: inherit;
-      font-size: 15px;
+      font-size:19.2px;
       font-weight: 700;
       padding: 14px;
       cursor: pointer;
@@ -130,112 +118,103 @@
       transition: background 0.2s, transform 0.1s;
       letter-spacing: 0.3px;
     }
-
-    .btn-login:hover {
-      background: #dbb855;
-    }
-
-    .btn-login:active {
-      transform: scale(0.99);
-    }
-
-    .btn-login:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
+    .btn-login:hover { background: #E0FFC8; }
+    .btn-login:active { transform: scale(0.99); }
+    .btn-login:disabled { opacity: 0.5; cursor: not-allowed; }
 
     .error-msg {
-      background: rgba(192, 57, 43, 0.15);
-      border: 1px solid rgba(192, 57, 43, 0.4);
+      background: rgba(240,131,107,0.14);
+      border: 1px solid rgba(240,131,107,0.42);
       border-radius: 8px;
-      color: #e74c3c;
-      font-size: 13px;
+      color: #F5A08C;
+      font-size:16.6px;
       padding: 10px 14px;
       margin-bottom: 18px;
       display: none;
     }
-
-    .error-msg.visible {
-      display: block;
-    }
+    .error-msg.visible { display: block; }
   </style>
 </head>
-
 <body>
 
-  <div class="login-card">
-    <div class="logo">
-      <div class="logo-icon">🏠</div>
-      <h1>Tasahel</h1>
-      <p>Sales Intelligence</p>
+<div class="login-card">
+  <div class="logo">
+    <div class="logo-icon">
+      <svg width="54" height="54" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#204654" stroke="#4D8296" stroke-width="2"/>
+        <path d="M32 12 51 28v24H38V38H26v14H13V28Z" stroke="#CAFFA6" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="32" cy="29" r="3.5" fill="#8FCB9B"/>
+      </svg>
     </div>
-
-    <div id="error-msg" class="error-msg"></div>
-
-    <form id="login-form" onsubmit="handleLogin(event)">
-      <div class="form-group">
-        <label for="email">Email address</label>
-        <input id="email" type="email" placeholder="you@company.com" autocomplete="email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="••••••••" autocomplete="current-password" required>
-      </div>
-      <button id="login-btn" class="btn-login" type="submit">Sign in</button>
-    </form>
+    <h1 aria-label="Hatla2y هتلاقي"><span class="latin">Hatla2y</span><span class="sep">&nbsp;</span><span class="ar" lang="ar">هتلاقي</span></h1>
+    <p>Real estate sales copilot</p>
   </div>
 
-  <script>
-    // If already logged in, redirect to dashboard
-    if (localStorage.getItem('tasahel_token')) {
-      try {
-        // quick validity check
-        const payload = JSON.parse(atob(localStorage.getItem('tasahel_token').split('.')[1]));
-        if (payload.exp * 1000 > Date.now()) window.location.href = '/';
-        else localStorage.removeItem('tasahel_token');
-      } catch (e) { localStorage.removeItem('tasahel_token'); }
-    }
+  <div id="error-msg" class="error-msg"></div>
 
-    function showError(msg) {
-      const el = document.getElementById('error-msg');
-      el.textContent = msg;
-      el.classList.add('visible');
-    }
-    function hideError() {
-      document.getElementById('error-msg').classList.remove('visible');
-    }
+  <form id="login-form" onsubmit="handleLogin(event)">
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input id="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="••••••••" autocomplete="current-password" required>
+    </div>
+    <button id="login-btn" class="btn-login" type="submit">Sign in</button>
+  </form>
+</div>
 
-    async function handleLogin(e) {
-      e.preventDefault();
-      hideError();
-      const btn = document.getElementById('login-btn');
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('password').value;
-      btn.disabled = true;
-      btn.textContent = 'Signing in…';
+<script>
+  // If already logged in, redirect to dashboard
+  if(localStorage.getItem('tasahel_token')){
+    try {
+      // quick validity check
+      const payload = JSON.parse(atob(localStorage.getItem('tasahel_token').split('.')[1]));
+      if(payload.exp * 1000 > Date.now()) window.location.href = '/';
+      else localStorage.removeItem('tasahel_token');
+    } catch(e) { localStorage.removeItem('tasahel_token'); }
+  }
 
-      try {
-        const res = await fetch('/api/auth/login', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, password })
-        });
-        const data = await res.json();
-        if (!res.ok) {
-          showError(data.error || 'Login failed');
-          return;
-        }
-        localStorage.setItem('tasahel_token', data.token);
-        localStorage.setItem('tasahel_user', JSON.stringify(data.user));
-        window.location.href = '/';
-      } catch (err) {
-        showError('Connection error — is the server running?');
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'Sign in';
+  function showError(msg){
+    const el = document.getElementById('error-msg');
+    el.textContent = msg;
+    el.classList.add('visible');
+  }
+  function hideError(){
+    document.getElementById('error-msg').classList.remove('visible');
+  }
+
+  async function handleLogin(e){
+    e.preventDefault();
+    hideError();
+    const btn = document.getElementById('login-btn');
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    btn.disabled = true;
+    btn.textContent = 'Signing in…';
+
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email, password})
+      });
+      const data = await res.json();
+      if(!res.ok){
+        showError(data.error || 'Login failed');
+        return;
       }
+      localStorage.setItem('tasahel_token', data.token);
+      localStorage.setItem('tasahel_user', JSON.stringify(data.user));
+      window.location.href = '/';
+    } catch(err){
+      showError('Connection error — is the server running?');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Sign in';
     }
-  </script>
+  }
+</script>
 </body>
-
 </html>

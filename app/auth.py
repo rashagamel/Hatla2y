@@ -1,5 +1,5 @@
 """
-Authentication module for Tasahel.
+Authentication module for Hatla2y.
 
 Handles:
   - Password hashing (bcrypt)

@@ -107,13 +107,14 @@ class TestModelMaturityDoesNotMutateScoring(unittest.TestCase):
             self.fail(f"get_model_maturity() unexpectedly touched external state: {e}")
 
 
-class TestStatsEndpointIntegration(unittest.TestCase):
+class TestStatsEndpointIntegration(IsolatedDatabaseTestCase):
     """Confirms /api/stats still exposes all pre-existing fields (nothing
     removed) alongside the new maturity fields, using the real Flask test
     client rather than a live server (faster, no port/process management)."""
 
     @classmethod
     def setUpClass(cls):
+        super().setUpClass()
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "app"))
         import api
         cls.client = api.app.test_client()

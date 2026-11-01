@@ -1,6 +1,6 @@
-﻿.env
+.env
 *.db
 *.db.backup-*
 __pycache__/
 .pytest_cache/
-data/real/*.csv
+.venv/

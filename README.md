@@ -1,3 +1,7 @@
+# Hatla2y (هتلاقي)
+
+AI sales copilot for Egyptian real-estate agents. (Previously named Tasahel; environment variables keep the `TASAHEL_` prefix.)
+
 """
 Flask API for the Real Estate AI Sales Copilot — Phase 1.
 

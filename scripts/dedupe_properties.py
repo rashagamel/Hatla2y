@@ -52,6 +52,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--db", default=os.environ.get("COPILOT_DB_PATH"))
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--no-backup", action="store_true", help="skip the backup copy (used on throwaway build databases)")
     args = ap.parse_args()
     if not args.db or not os.path.exists(args.db):
         sys.exit("Database not found. Set COPILOT_DB_PATH or pass --db <file>.")
@@ -69,9 +70,10 @@ def main():
         print("Dry run only. Run again with --apply to remove them.")
         return
 
-    backup = f"{args.db}.backup-{time.strftime('%Y%m%d-%H%M%S')}"
-    shutil.copyfile(args.db, backup)
-    print("backup written:", backup)
+    if not args.no_backup:
+        backup = f"{args.db}.backup-{time.strftime('%Y%m%d-%H%M%S')}"
+        shutil.copyfile(args.db, backup)
+        print("backup written:", backup)
 
     conn.execute("PRAGMA foreign_keys = OFF")
     conn.execute("CREATE TEMP TABLE dup_map (dup_id INTEGER PRIMARY KEY, keep_id INTEGER)")

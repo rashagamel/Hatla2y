@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — Hatla2y rename, hardening and deploy prep
+- Renamed the product to Hatla2y (هتلاقي); new teal / spring-meadow theme with skyline wallpaper.
+- Central access control, auth hardening, login throttle, signed WhatsApp webhook.
+- Consistent match counts, duplicate-listing cleanup (scripts/dedupe_properties.py), server-side seed loading (TASAHEL_SEED_CSV).
+- requirements.txt is now UTF-8 (it was UTF-16 and would break pip); .gitignore rewritten without BOM so .env is really ignored.
 ## System Completion & Roadmap Convergence (Phases 5, 7, 8, 9)
 
 Completed end-to-end implementation and UI convergence for the planned intelligence, analytics, valuation, and pipeline phases across the backend and frontend.

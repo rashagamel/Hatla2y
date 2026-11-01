@@ -1,5 +1,5 @@
 """
-Performance benchmark for the Tasahel API — run this any time you want to
+Performance benchmark for the Hatla2y API — run this any time you want to
 verify the app is actually fast, not just assume it. Hits the real HTTP
 endpoints (not the underlying Python functions directly), the same way the
 dashboard does, including the 3-concurrent-request pattern the dashboard

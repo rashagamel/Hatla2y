@@ -777,6 +777,42 @@ def lead_assignments(lead_id):
     return jsonify(get_assignment_history(lead_id))
 
 
+def load_seed_properties():
+    """First start on a fresh server: the database is empty and the shell is not available on every
+    hosting plan, so load the listings automatically. Runs only when TASAHEL_SEED_CSV is set, the
+    properties table is empty and the file exists, so a restart never re-imports or duplicates anything.
+    A failure is logged and never stops the server from starting."""
+    csv_setting = os.environ.get("TASAHEL_SEED_CSV", "").strip()
+    if not csv_setting:
+        return
+    root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    csv_path = csv_setting if os.path.isabs(csv_setting) else os.path.join(root, csv_setting)
+    conn = get_connection()
+    existing = conn.execute("SELECT COUNT(*) FROM properties").fetchone()[0]
+    conn.close()
+    if existing > 0:
+        return
+    if not os.path.exists(csv_path):
+        print(f"[bootstrap] TASAHEL_SEED_CSV points to a missing file: {csv_path}")
+        return
+    import subprocess
+    import sys
+    env = dict(os.environ, COPILOT_DB_PATH=str(DB_PATH))
+    steps = [
+        [sys.executable, os.path.join(root, "scripts", "ingest_kaggle.py"), "--csv", csv_path],
+        [sys.executable, os.path.join(root, "scripts", "dedupe_properties.py"), "--apply", "--no-backup"],
+    ]
+    for cmd in steps:
+        try:
+            result = subprocess.run(cmd, cwd=root, env=env, timeout=1200, check=False)
+            print(f"[bootstrap] {os.path.basename(cmd[1])} finished with exit code {result.returncode}")
+            if result.returncode != 0:
+                break
+        except Exception as e:                       # noqa: BLE001 - never block startup
+            print(f"[bootstrap] {os.path.basename(cmd[1])} failed: {e}")
+            break
+
+
 def bootstrap():
     """Create/upgrade the schema and seed default accounts and agents. Under gunicorn the __main__
     block below never runs, so deployments set TASAHEL_BOOTSTRAP=1 (and start gunicorn with --preload
@@ -787,6 +823,7 @@ def bootstrap():
         migrate_schema()  # cheap, idempotent: picks up new columns and tables on existing databases
     seed_default_users()   # creates default accounts if no users exist yet
     seed_default_agents()  # creates default sales agents if none exist yet
+    load_seed_properties() # loads the listings on a fresh server (only if TASAHEL_SEED_CSV is set)
 
 
 if os.environ.get("TASAHEL_BOOTSTRAP", "0").strip().lower() in ("1", "true", "yes"):

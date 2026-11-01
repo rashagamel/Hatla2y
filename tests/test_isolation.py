@@ -42,7 +42,10 @@ class TestDatabaseIsolation(IsolatedDatabaseTestCase):
         # Verify canary does NOT exist in the operational database
         if os.path.exists(DEFAULT_DB_PATH):
             conn_prod = sqlite3.connect(DEFAULT_DB_PATH)
-            prod_row = conn_prod.execute("SELECT id FROM leads WHERE name = 'Canary Isolation Lead'").fetchone()
+            has_leads = conn_prod.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='leads'").fetchone()
+            prod_row = None
+            if has_leads:   # an empty or fresh file has no leads table, so nothing could have leaked
+                prod_row = conn_prod.execute("SELECT id FROM leads WHERE name = 'Canary Isolation Lead'").fetchone()
             conn_prod.close()
             self.assertIsNone(prod_row, "Canary test lead must never leak into operational copilot.db!")
 

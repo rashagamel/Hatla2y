@@ -1,4 +1,4 @@
-# Testing Guide — Tasahel
+# Testing Guide — Hatla2y
 
 A complete walkthrough for running this project locally, testing every
 part of it, and measuring its actual performance. Follow in order the

@@ -1,5 +1,5 @@
 """
-Tasahel full system check.
+Hatla2y full system check.
 Run from the project root (server can stay running):
     py verify_system.py
 Read-only: it never modifies the database.
