@@ -256,7 +256,8 @@ def build_talking_points(lead: dict, matches: list, objections: list) -> list:
         points.append(f"Lead prefers {lead['delivery_preference'].replace('_', ' ')} delivery.")
     plan_reason = _plan_fit_reason(matches[0] if matches else None)
     if plan_reason:
-        points.append(f"On {matches[0]['title']}: {plan_reason}")
+        plan_text = describe_plan_reason(plan_reason)
+        points.append(f"{matches[0]['title']} has {plan_text}." if plan_text else f"On {matches[0]['title']}: {plan_reason}")
     if not points:
         points.append("No specific objections or preferences recorded yet — focus on understanding requirements.")
     return points

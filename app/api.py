@@ -611,7 +611,13 @@ def get_stats():
     Also powers the model-reliability indicator (see feedback.get_model_maturity)."""
     conn = get_connection()
     stats = {}
-    for row in conn.execute("SELECT data_source, COUNT(*) c FROM leads GROUP BY data_source"):
+    user = g.get("user")                 # agents only count the leads they are allowed to see
+    if user is None or user["role"] in _MANAGER_ROLES:
+        lead_rows = conn.execute("SELECT data_source, COUNT(*) c FROM leads GROUP BY data_source").fetchall()
+    else:
+        lead_rows = conn.execute("SELECT data_source, COUNT(*) c FROM leads WHERE assigned_agent_id IS NULL "
+                                 "OR assigned_agent_id = ? GROUP BY data_source", (user["agent_id"],)).fetchall()
+    for row in lead_rows:
         stats[f"leads_{row['data_source']}"] = row["c"]
     for row in conn.execute("SELECT data_source, COUNT(*) c FROM properties GROUP BY data_source"):
         stats[f"properties_{row['data_source']}"] = row["c"]

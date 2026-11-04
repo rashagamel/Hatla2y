@@ -202,3 +202,29 @@ class TestNoRegressionOnEnglish(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestArabicObjectionDetection(unittest.TestCase):
+    """Egyptian-dialect objections must be recognised, otherwise Arabic-speaking clients raising a
+    concern get no reply while English ones do."""
+
+    def _found(self, text):
+        from extraction import _detect_objections
+        return _detect_objections(text)
+
+    def test_down_payment_objections(self):
+        for text in ("الدفعة المقدمة كبيرة", "المقدم كبير", "الدفعه المقدمه كبيره"):
+            self.assertEqual(self._found(text), ["down_payment"], text)
+
+    def test_monthly_payment_objections(self):
+        for text in ("القسط الشهري عالي", "مش قادر على القسط"):
+            self.assertEqual(self._found(text), ["monthly_payment"], text)
+
+    def test_price_location_delivery_objections(self):
+        self.assertEqual(self._found("السعر غالي"), ["price"])
+        self.assertEqual(self._found("المنطقة بعيدة قوي"), ["location"])
+        self.assertEqual(self._found("الاستلام بعد كتير"), ["delivery_timeline"])
+
+    def test_plain_requirements_are_not_objections(self):
+        for text in ("عايز شقة في التجمع 3 غرف", "ميزانيتي 5 مليون", "عايز قسط على 10 سنين"):
+            self.assertEqual(self._found(text), [], text)

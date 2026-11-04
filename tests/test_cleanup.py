@@ -107,3 +107,25 @@ def test_property_message_is_not_lowercased_into_nonsense():
     msg = build_suggested_message({"name": "Test Client"}, {"action": "send_matching_properties"}, top, None)
     assert "price 8,000,000 egp" not in msg
     assert msg.endswith("Want me to send more details or set up a viewing?")
+
+
+from db import get_connection  # noqa: E402
+from test_base import IsolatedDatabaseTestCase  # noqa: E402
+
+
+class TestNoDemoAgentsInProduction(IsolatedDatabaseTestCase):
+    """A real deployment must not get made-up sales agents or have its leads handed to them."""
+
+    def test_production_mode_creates_no_demo_agents(self):
+        from unittest import mock
+        from agents import seed_default_agents
+        conn = get_connection()
+        conn.execute("DELETE FROM sales_agents")
+        conn.commit()
+        conn.close()
+        with mock.patch.dict(os.environ, {"TASAHEL_REQUIRE_AUTH": "1"}):
+            seed_default_agents()
+        conn = get_connection()
+        count = conn.execute("SELECT COUNT(*) FROM sales_agents").fetchone()[0]
+        conn.close()
+        self.assertEqual(count, 0)

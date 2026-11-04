@@ -273,6 +273,9 @@ def _summarize_fit(results, lead: dict) -> dict:
     beds_ok = [r for r in loc_ok if "bedrooms" not in r["hard_fail"]]
     budget_ok = [r for r in beds_ok if r["price_status"] in ("ok", "below", "soft_over")]
     plan_ok = [r for r in budget_ok if r["plan_fits"] is True]
+    # Units in the area priced inside the budget that fail only on bedrooms: lets the agent be told
+    # "there is something in budget, it just has too few bedrooms" instead of "nothing in budget".
+    budget_any = [r for r in loc_ok if r["price_status"] in ("ok", "below", "soft_over")]
     # "Matching unit" = no hard failure AND not far below the stated budget range: a 4.5M unit
     # for a 7-9M buyer is not a realistic match even though matching.py only soft-penalises it.
     qualified = [r for r in results if not r["hard_fail"] and r["price_status"] != "far_below"]
@@ -302,6 +305,7 @@ def _summarize_fit(results, lead: dict) -> dict:
         "best_score": best_overall,
         "location_count": len(loc_ok),
         "budget_count": len(budget_ok),
+        "budget_any_count": len(budget_any),
         "plan_count": len(plan_ok),
         "budget_status": budget_status,
         "location_status": location_status,
@@ -610,7 +614,14 @@ def get_lead_intelligence(lead_id: int) -> dict:
         )
         positive_factors.append(budget_fit_reason)
     elif budget_status == "gap":
-        budget_fit_reason = "No properties currently match the stated budget"
+        n_any = fit.get("budget_any_count", 0)
+        min_beds = lead.get("min_bedrooms")
+        if n_any and min_beds:
+            budget_fit_reason = (f"{n_any} {'unit' if n_any == 1 else 'units'} in your area "
+                                 f"{'is' if n_any == 1 else 'are'} priced within your budget, but none has the "
+                                 f"{min_beds}+ bedrooms you asked for")
+        else:
+            budget_fit_reason = "No properties currently match the stated budget"
         warnings.append(budget_fit_reason)
     else:
         budget_fit_reason = "Budget not stated"
@@ -694,7 +705,9 @@ def get_lead_intelligence(lead_id: int) -> dict:
     if score_result.get("score_capped"):
         explanation_parts.append("no available unit meets all stated requirements yet")
     if budget_fit:
-        explanation_parts.append(f"budget fits {fit['budget_count']} propert{'y' if fit['budget_count'] == 1 else 'ies'}")
+        _n = fit['qualified_count'] if fit.get('has_requirements') and fit.get('qualified_count') else fit['budget_count']
+        _what = "units match all stated requirements" if _n != 1 else "unit matches all stated requirements"
+        explanation_parts.append(f"{_n} {_what}" if fit.get('has_requirements') and fit.get('qualified_count') else f"budget fits {_n} propert{'y' if _n == 1 else 'ies'}")
     if location_fit:
         explanation_parts.append("inventory available in preferred locations")
     if financing_fit and lead.get("payment_preference") == "installment":

@@ -240,15 +240,31 @@ def _parse_money(text_fragment: str):
     return value
 
 
+_AR_HIGH = r"(?:كبير[ةه]?|عالي[ةه]?|غالي[ةه]?|كتير[ةه]?|مرتفع[ةه]?|صعب[ةه]?|مبالغ)"
+
 OBJECTION_PATTERNS = {
     "monthly_payment": [r"too (?:high|much).{0,20}month", r"can'?t afford.{0,20}month",
-                         r"monthly.{0,20}(?:too|expensive|a lot|high)"],
+                         r"monthly.{0,20}(?:too|expensive|a lot|high)",
+                         # Arabic / Egyptian dialect: "القسط عالي", "القسط الشهري كبير", "مش قادر على القسط"
+                         r"(?:القسط|الشهري|الاقساط|الأقساط).{0,20}" + _AR_HIGH,
+                         r"(?:مش|مو|ما) (?:قادر|هقدر|بقدر).{0,15}(?:القسط|الاقساط|الأقساط)"],
     "down_payment": [r"too (?:high|much).{0,20}down", r"can'?t afford.{0,20}down",
-                      r"down payment.{0,20}(?:too|high|a lot)"],
-    "price": [r"too expensive", r"price.{0,10}(?:too )?high", r"over (?:my|our) budget", r"can'?t afford it"],
-    "location": [r"too far", r"not (?:the )?right (?:location|area)", r"far from (?:work|everything)"],
+                      r"down payment.{0,20}(?:too|high|a lot)",
+                      # "الدفعة المقدمة كبيرة", "المقدم كبير", "الدفعه المقدمه عالية"
+                      r"(?:الدفع[ةه]|المقدم|المقدّم|الدفع[ةه] المقدم[ةه]|المقدمه).{0,20}" + _AR_HIGH,
+                      r"(?:مش|مو|ما) (?:قادر|هقدر|بقدر).{0,15}(?:المقدم|الدفع[ةه])"],
+    "price": [r"too expensive", r"price.{0,10}(?:too )?high", r"over (?:my|our) budget", r"can'?t afford it",
+              # "السعر غالي", "الأسعار عالية", "غالي قوي", "فوق ميزانيتي"
+              r"(?:السعر|الاسعار|الأسعار|سعرها|سعره).{0,15}" + _AR_HIGH,
+              r"غالي[ةه]? (?:قوي|اوي|أوي|جدا|جداً)",
+              r"(?:فوق|اكتر من|أكتر من|خارج) (?:ميزانيت|ميزاني)"],
+    "location": [r"too far", r"not (?:the )?right (?:location|area)", r"far from (?:work|everything)",
+                 r"(?:المنطق[ةه]|المكان|الموقع|المكان ده|المنطقه دي).{0,12}بعيد[ةه]?",
+                 r"بعيد[ةه]? (?:قوي|اوي|أوي|جدا|جداً|عن (?:الشغل|شغلي|المدرس[ةه]|كل حاجة))"],
     "delivery_timeline": [r"too long.{0,10}(?:wait|deliver)", r"delivery.{0,15}(?:too|far|long|late)",
-                           r"waiting.{0,15}too long"],
+                           r"waiting.{0,15}too long",
+                           r"(?:الاستلام|التسليم|الاستلام).{0,15}(?:بعيد|متأخر|طويل|كتير|بعد (?:كتير|سنين))",
+                           r"(?:استنى|انتظر|أستنى).{0,10}(?:كتير|قوي|اوي|أوي)"],
 }
 
 

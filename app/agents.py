@@ -6,6 +6,7 @@ A lead can be assigned to one current agent at a time (is_current=1),
 but the full assignment history is preserved in lead_assignments.
 """
 
+import os
 from db import get_connection
 
 
@@ -140,7 +141,12 @@ def get_assignment_history(lead_id, conn=None):
 
 
 def seed_default_agents(conn=None):
-    """Creates default sales agents if none exist, and assigns unassigned leads."""
+    """Creates default sales agents if none exist, and assigns unassigned leads.
+
+    Demo only: when login is required (a real deployment) no made-up agents are created and no leads
+    are handed out, so brokers never see placeholder staff or find their leads assigned to them."""
+    if os.environ.get("TASAHEL_REQUIRE_AUTH", "0").strip().lower() in ("1", "true", "yes"):
+        return
     owns_conn = conn is None
     if owns_conn:
         conn = get_connection()

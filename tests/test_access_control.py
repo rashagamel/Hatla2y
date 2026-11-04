@@ -283,3 +283,25 @@ class TestLoginThrottle(AccessControlTestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+
+class TestStatsRespectsAgentScope(AccessControlTestCase):
+    """The lead counters in /api/stats must not reveal how many leads an agent cannot see."""
+
+    def _lead_total(self, who):
+        data = self.call("get", "/api/stats", who=who).get_json()
+        return data["real_leads"] + data["demo_leads"]
+
+    def test_agent_counts_only_visible_leads(self):
+        conn = get_connection()
+        everything = conn.execute("SELECT COUNT(*) FROM leads").fetchone()[0]
+        conn.close()
+        # agent 1 sees his own lead plus unassigned ones, not agent 2's
+        self.assertLess(self._lead_total("agent1"), everything)
+
+    def test_manager_counts_every_lead(self):
+        conn = get_connection()
+        everything = conn.execute("SELECT COUNT(*) FROM leads").fetchone()[0]
+        conn.close()
+        self.assertEqual(self._lead_total("manager"), everything)

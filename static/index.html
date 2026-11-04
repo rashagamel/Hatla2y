@@ -1219,7 +1219,7 @@ async function renderAnalytics(){
             <div class="funnel-track">
               <div class="funnel-fill" style="width:${Math.max((st.count/maxFunnelCount)*100, 7)}%">${st.count}</div>
             </div>
-            <div class="funnel-rate">${st.conversion_from_prev_pct !== null ? st.conversion_from_prev_pct + '%' : '100%'}</div>
+            <div class="funnel-rate">${(st.conversion_rate_pct !== null && st.conversion_rate_pct !== undefined) ? st.conversion_rate_pct + '%' : '—'}</div>
           </div>
         `).join('')}
         <div style="font-size:14.0px; color:var(--text-faint); margin-top:10px; text-align:right;">
@@ -1332,6 +1332,8 @@ async function renderValuationTab(){
         <div class="kpi-card"><div class="kpi-label">Training Properties</div><div class="kpi-val">${metrics.sample_size}</div><div class="kpi-sub">${metrics.train_samples} train / ${metrics.test_samples} test</div></div>
         <div class="kpi-card"><div class="kpi-label">Architecture</div><div class="kpi-val" style="font-size:20.4px;">Gradient Boosting</div><div class="kpi-sub">Log-transformed targets</div></div>
       </div>
+
+      ${Number(metrics.mape_percent) > 25 ? `<div style="margin:0 0 18px; padding:12px 16px; border:1px solid var(--amber); border-radius:8px; color:var(--amber); font-size:15px;"><b>Indicative estimate only.</b> On the test set this model is off by about ${metrics.mape_percent}% on average, so use the figure as a rough guide for conversations, never as a quoted or appraised price.</div>` : ''}
 
       <div class="val-grid">
         <div class="val-form-card">
