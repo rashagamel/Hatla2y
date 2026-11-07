@@ -36,6 +36,28 @@ def _stage_counts(conn):
     return counts
 
 
+def _reached_counts(conn):
+    """{stage: number of leads that reached that stage or went beyond it}.
+    Uses the transition history, so a lead that was Contacted and then Lost still counts as having
+    reached Contacted. Won leads count as having reached every funnel stage."""
+    funnel_stages = [s for s in PIPELINE_STAGES if s not in ("won", "lost")]
+    order = {s: i for i, s in enumerate(funnel_stages)}
+    best = {}
+    for r in conn.execute("SELECT id, status FROM leads").fetchall():
+        st = _canonical(r["status"])
+        best[r["id"]] = len(funnel_stages) - 1 if st == "won" else order.get(st, 0)
+    for r in conn.execute("SELECT lead_id, to_status FROM pipeline_transitions").fetchall():
+        st = _canonical(r["to_status"])
+        if r["lead_id"] in best:
+            idx = len(funnel_stages) - 1 if st == "won" else order.get(st)
+            if idx is not None and idx > best[r["lead_id"]]:
+                best[r["lead_id"]] = idx
+    counts = {}
+    for stage, idx in order.items():
+        counts[stage] = sum(1 for b in best.values() if b >= idx)
+    return counts
+
+
 # ---------------------------------------------------------------------------
 # Manager dashboard
 # ---------------------------------------------------------------------------
@@ -65,11 +87,12 @@ def get_manager_dashboard(conn=None):
     lost_count = stage_counts.get("lost", 0)
 
     pipeline_value = conn.execute(
-        "SELECT COALESCE(SUM(COALESCE(budget_max, budget_min, 0)), 0) v FROM leads"
+        "SELECT COALESCE(SUM(COALESCE(budget_max, budget_min, 0)), 0) v FROM leads "
+        "WHERE status NOT IN ('won', 'lost')"
     ).fetchone()["v"]
     pipeline_value_real = conn.execute(
         "SELECT COALESCE(SUM(COALESCE(budget_max, budget_min, 0)), 0) v "
-        "FROM leads WHERE data_source = 'real'"
+        "FROM leads WHERE data_source = 'real' AND status NOT IN ('won', 'lost')"
     ).fetchone()["v"]
 
     # Average response time: gap between created_at and first non-system event
@@ -168,6 +191,7 @@ def get_conversion_funnel(conn=None):
         conn = get_connection()
 
     stage_counts = _stage_counts(conn)
+    reached = _reached_counts(conn)
     if owns_conn:
         conn.close()
 
@@ -175,15 +199,16 @@ def get_conversion_funnel(conn=None):
     funnel = []
     prev_count = None
     for stage in ordered_stages:
-        count = stage_counts.get(stage, 0)
+        count = reached.get(stage, 0)
         rate = round(count / prev_count * 100, 1) if prev_count and prev_count > 0 else None
         funnel.append({
             "stage":          stage,
             "label":          STAGE_LABELS.get(stage, stage),
-            "count":          count,
+            "count":          count,                 # leads that reached this stage or went past it
+            "current_count":  stage_counts.get(stage, 0),
             "conversion_rate_pct": rate,   # rate FROM the previous stage
         })
-        prev_count = count if count > 0 else prev_count  # don't divide by zero downstream
+        prev_count = count
 
     won  = stage_counts.get("won", 0)
     lost = stage_counts.get("lost", 0)
